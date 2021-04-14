@@ -1,0 +1,39 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.8, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- C:\Users\vol35\AppData\Local\Programs\Python\Python38\python.exe
+cachedir: .pytest_cache
+metadata: {'Python': '3.8.8', 'Platform': 'Windows-10-10.0.19041-SP0', 'Packages': {'pytest': '6.2.2', 'py': '1.10.0', 'pluggy': '0.13.1'}, 'Plugins': {'base-url': '1.4.2', 'html': '3.1.1', 'metadata': '1.11.0', 'selenium': '2.0.1', 'variables': '1.9.0'}, 'Base URL': '', 'Driver': 'Chrome', 'Capabilities': {}}
+driver: Chrome
+sensitiveurl: .*
+rootdir: C:\skill_factory\modul272\petfriends_qaatomation_page_pattern-main
+plugins: base-url-1.4.2, html-3.1.1, metadata-1.11.0, selenium-2.0.1, variables-1.9.0
+collecting ... collected 0 items
+INTERNALERROR> Traceback (most recent call last):
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py", line 269, in wrap_session
+INTERNALERROR>     session.exitstatus = doit(config, session) or 0
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py", line 322, in _main
+INTERNALERROR>     config.hook.pytest_collection(session=session)
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+INTERNALERROR>     return self._hookexec(self, self.get_hookimpls(), kwargs)
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+INTERNALERROR>     return self._inner_hookexec(hook, methods, kwargs)
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\manager.py", line 84, in <lambda>
+INTERNALERROR>     self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py", line 208, in _multicall
+INTERNALERROR>     return outcome.get_result()
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py", line 80, in get_result
+INTERNALERROR>     raise ex[1].with_traceback(ex[2])
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+INTERNALERROR>     res = hook_impl.function(*args)
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py", line 333, in pytest_collection
+INTERNALERROR>     session.perform_collect()
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py", line 612, in perform_collect
+INTERNALERROR>     fspath, parts = resolve_collection_argument(
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\site-packages\_pytest\main.py", line 862, in resolve_collection_argument
+INTERNALERROR>     if not fspath.exists():
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\pathlib.py", line 1400, in exists
+INTERNALERROR>     self.stat()
+INTERNALERROR>   File "C:\Users\vol35\AppData\Local\Programs\Python\Python38\lib\pathlib.py", line 1197, in stat
+INTERNALERROR>     return self._accessor.stat(self)
+INTERNALERROR> OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\\skill_factory\\modul272\\petfriends_qaatomation_page_pattern-main\\tests\\*'
+
+============================ no tests ran in 0.02s ============================
